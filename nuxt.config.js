@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 export default {
-  // target: 'static',
+  target: 'server',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'reverence-recital-2021',
