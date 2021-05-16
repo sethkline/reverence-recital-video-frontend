@@ -3,82 +3,35 @@
     <div class="container">
       <div class="has-text-centered" id="services-text-container">
         Welcome {{ loggedInUser.username }}
-        <h1 class="title is-1">Our Shows</h1>
-        <h4 class="subtitle">
-          The Videos will be posted when they are available
+        <h1 class="title is-1">Reverence Studios Recital Videos</h1>
+        <h4 class="subtitle" v-if="videos.length === 0">
+          There are no videos to stream yet check back later.
         </h4>
       </div>
       <br />
       <div class="columns">
-        <div class="column">
-          <div class="card">
+        <div class="column" v-if="videos && videos.length">
+          <div class="card" v-for="video in videos" :key="video.id">
             <div class="card-content">
               <div class="has-text-centered">
-                <img src="images/card-item-1.png" />
+                <figure class="image is-16by9">
+                  <img
+                    :src="[
+                      createThumbnail(
+                        video.mux_video_uploader_mux_asset.playback_id
+                      ),
+                    ]"
+                  />
+                </figure>
               </div>
-              <h3
-                class="title is-3 has-text-centered"
-                id="card-product-description"
+              <nuxt-link
+                :to="`watch/${video.id}`"
+                class="button is-medium is-black is-primary is-light has-text-centered"
               >
-                May 17th
-              </h3>
-              <p class="has-text-centered">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
-              </p>
+                Watch {{ video.mux_video_uploader_mux_asset.title }}
+              </nuxt-link>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-content">
-              <div class="has-text-centered">
-                <img src="images/card-item-1.png" />
-              </div>
-              <h3
-                class="title is-3 has-text-centered"
-                id="card-product-description"
-              >
-                May 18th
-              </h3>
-              <p class="has-text-centered">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <div class="card-content">
-              <div class="has-text-centered">
-                <img src="images/card-item-1.png" />
-              </div>
-              <h3
-                class="title is-3 has-text-centered"
-                id="card-product-description"
-              >
-                May 19th
-              </h3>
-              <p class="has-text-centered">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div v-if="videos && videos.length">
-          <test-video
-            v-for="video in videos"
-            :key="video.id"
-            :streamLink="video.mux_video_uploader_mux_asset.playback_id"
-          />
         </div>
       </div>
     </div>
@@ -97,6 +50,11 @@ export default {
   },
   computed: {
     ...mapGetters(['loggedInUser']),
+  },
+  methods: {
+    createThumbnail(id) {
+      return `https://image.mux.com/${id}/thumbnail.png?width=214&height=121&fit_mode=pad`
+    },
   },
 }
 </script>
