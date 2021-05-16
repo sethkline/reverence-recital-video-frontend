@@ -92,7 +92,7 @@ export default {
       return this.$store.getters['cart/items']
     },
     stripeKey() {
-      return process.env.STRIPE_KEY
+      return process.env.stripeKey
     },
   },
   data() {

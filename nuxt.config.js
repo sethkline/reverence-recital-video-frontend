@@ -67,6 +67,9 @@ export default {
       },
     },
   },
+  env: {
+    stripeKey: process.env.STRIPE_KEY,
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
