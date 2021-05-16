@@ -56,7 +56,7 @@
               <card
                 class="box"
                 ref="card-stripe"
-                stripe="pk_test_vwISK8uJRu9nDzbkEq51WiKo"
+                :stripe="stripeKey"
                 @change="complete = $event.complete"
                 :options="stripeOptions"
               />
@@ -91,6 +91,9 @@ export default {
     },
     selectedPlan() {
       return this.$store.getters['cart/items']
+    },
+    stripeKey() {
+      return process.env.STRIPE_KEY
     },
   },
   data() {
