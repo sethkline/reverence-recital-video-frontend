@@ -45,7 +45,7 @@
               </div>
               <div v-else-if="hasNoPlan" class="buttons is-left">
                 <nuxt-link
-                  to="quick-pick-plan"
+                  to="/quick-pick-plan"
                   class="button is-medium is-black is-primary is-light"
                 >
                   Pick A Plan

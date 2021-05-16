@@ -11,9 +11,9 @@
             <p class="control p-4">
               <label for="full-name" class="form-label">Full name</label>
               <input
+                id="full-name"
                 v-model="fullName"
                 type="text"
-                id="full-name"
                 class="input p-2"
                 required
               />
@@ -21,10 +21,10 @@
             <p class="control p-4">
               <label class="form-label" for="address">Address</label>
               <input
+                id="address"
                 v-model="address"
                 class="input"
                 type="text"
-                id="address"
                 required
               />
             </p>
@@ -32,8 +32,8 @@
             <p class="control p-4">
               <label class="form-label" for="city">City</label>
               <input
-                v-model="city"
                 id="city"
+                v-model="city"
                 class="input"
                 type="text"
                 required
@@ -45,20 +45,19 @@
                 >Postal code</label
               >
               <input
-                v-model="postalCode"
                 id="postal-code"
+                v-model="postalCode"
                 class="input"
                 type="text"
               />
             </p>
             <div class="p-4">
-              <label for="card">Credit Card</label>
               <card
-                class="box"
                 ref="card-stripe"
+                class="box"
                 :stripe="stripeKey"
-                @change="complete = $event.complete"
                 :options="stripeOptions"
+                @change="complete = $event.complete"
               />
             </div>
             <div class="p-4">
@@ -129,6 +128,7 @@ export default {
             color: '#FFC7EE',
           },
         },
+        focus: false,
       },
     }
   },

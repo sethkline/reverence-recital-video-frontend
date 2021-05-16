@@ -65,7 +65,6 @@
 </template>
 
 <script>
-
 export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/shows')

@@ -5,12 +5,12 @@
         <h1 class="title is-size-3">Pick a plan</h1>
         <div
           v-for="plan in plans"
-          @click="selectedOption = plan"
           :key="plan.id"
           class="hero box p-0 pointer"
           :class="[
             selectedOption.slug === plan.slug ? 'is-primary' : 'is-black',
           ]"
+          @click="selectedOption = plan"
         >
           <div class="hero-body">
             <p class="title">{{ plan.name }}</p>
