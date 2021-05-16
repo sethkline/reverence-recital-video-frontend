@@ -1,6 +1,7 @@
-require('dotenv').config();
+require('dotenv').config()
 
 export default {
+  target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'reverence-recital-2021',
@@ -9,9 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    script: [
-      {src: 'https://js.stripe.com/v3'}
-    ],
+    script: [{ src: 'https://js.stripe.com/v3' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
@@ -50,7 +49,7 @@ export default {
         token: {
           property: 'token',
           required: true,
-          type: 'Bearer'
+          type: 'Bearer',
         },
         endpoints: {
           login: {
