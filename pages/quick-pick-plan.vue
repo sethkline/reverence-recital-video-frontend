@@ -1,7 +1,7 @@
 <template>
   <div class="container p-4">
     <div class="columns">
-      <div v-show="plans" class="column is-10 is-offset-1">
+      <div v-if="plans && plans.length" class="column is-10 is-offset-1">
         <h1 class="title is-size-3">Pick a plan</h1>
         <div
           v-for="plan in plans"
@@ -17,7 +17,7 @@
             <p class="subtitle">${{ plan.price }} - {{ plan.description }}</p>
           </div>
         </div>
-        <div v-show="selectedOption.slug" class="has-text-centered">
+        <div v-if="selectedOption.slug" class="has-text-centered">
           <button class="button is-primary is-large" @click="setPlan">
             Continue
           </button>

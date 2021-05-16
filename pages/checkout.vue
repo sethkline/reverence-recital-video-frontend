@@ -1,8 +1,8 @@
 <template>
   <div>
     <a class="button button-primary m-3" @click="$router.go(-1)">
-      <span icon="arrow-left"></span> go back</a
-    >
+      <span icon="arrow-left"></span> go back
+    </a>
     <section class="section">
       <div class="columns">
         <div class="column is-4 is-offset-4">
@@ -84,17 +84,6 @@ export default {
   components: {
     Card,
   },
-  computed: {
-    price() {
-      return this.$store.getters['cart/price']
-    },
-    selectedPlan() {
-      return this.$store.getters['cart/items']
-    },
-    stripeKey() {
-      return process.env.stripeKey
-    },
-  },
   data() {
     return {
       address: '',
@@ -128,9 +117,19 @@ export default {
             color: '#FFC7EE',
           },
         },
-        focus: false,
       },
     }
+  },
+  computed: {
+    price() {
+      return this.$store.getters['cart/price']
+    },
+    selectedPlan() {
+      return this.$store.getters['cart/items']
+    },
+    stripeKey() {
+      return process.env.stripeKey
+    },
   },
   methods: {
     async handleSubmit() {
