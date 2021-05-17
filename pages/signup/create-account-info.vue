@@ -8,7 +8,7 @@
         With your account you can:
       </p>
     </div>
-    <div class="columns is-mobile is-centered pt-3">
+    <div class="columns is-desktop is-centered pt-3">
       <div class="column is-5">
         <div class="list">
           <ul>

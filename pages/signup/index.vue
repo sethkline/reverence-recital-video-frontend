@@ -5,7 +5,7 @@
         Watching Reverence's 2021 recital
       </h1>
     </div>
-    <div class="columns is-mobile is-centered pt-3">
+    <div class="columns is-desktop is-centered pt-3">
       <div class="column is-5">
         <div class="list">
           <ul>

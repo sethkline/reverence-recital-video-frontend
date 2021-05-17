@@ -10121,4 +10121,7 @@ input[type='submit'].button {
 .textarea:focus.is-danger {
   box-shadow: 0 0 7px 0 #f90000;
 }
+.pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=bulmaswatch.min.css.map */
