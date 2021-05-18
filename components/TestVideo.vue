@@ -13,7 +13,14 @@ export default {
   },
   mounted() {
     if (this.streamLink) {
-      this.loadVideo()
+      const canPlayHLs = this.$refs.video.canPlayType(
+        'application/vnd.apple.mpegurl'
+      )
+      if (canPlayHLs) {
+        this.$refs.video.src = this.streamLink
+      } else {
+        this.loadVideo()
+      }
     }
   },
   methods: {
