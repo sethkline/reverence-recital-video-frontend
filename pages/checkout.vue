@@ -64,7 +64,11 @@
               <Cart class="p-4" />
             </div>
             <div class="has-text-centered pt-4">
-              <button class="button is-primary is-large">
+              <button
+                class="button is-primary is-large"
+                :class="{ 'is-loading': loading }"
+                :disabled="loading"
+              >
                 Proccess Payment(${{ price }})
               </button>
             </div>
@@ -161,6 +165,8 @@ export default {
       } catch (err) {
         this.loading = false
         alert('An error occurred.')
+      } finally {
+        this.loading = false
       }
     },
     updateAuthUserRole() {
