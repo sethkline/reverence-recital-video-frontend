@@ -7,7 +7,6 @@
         <tr>
           <td>Name</td>
           <td>Description</td>
-          <td>Size</td>
         </tr>
       </thead>
       <tbody>
