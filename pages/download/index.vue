@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">Downloads</h1>
+    <p>Right Click file name and choose 'save link as' to download</p>
     <table v-if="downloads && downloads.length" class="table">
       <thead>
         <tr>
@@ -15,7 +16,6 @@
             <a :href="download.link" download>{{ download.name }}</a>
           </td>
           <td>{{ download.description }}</td>
-          <td>{{ download.size }}MB</td>
         </tr>
       </tbody>
     </table>
@@ -29,6 +29,9 @@ export default {
   name: 'Download',
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/downloads')
+    data.sort((a, b) =>
+      a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+    )
     return { downloads: data }
   },
 }
