@@ -1,5 +1,14 @@
-# Reverence Studios Video Nuxt Site
 
+# Video Streaming Frontend
+
+A Video streaming website for Reverence Studios annual dance recitals.
+
+
+## Authors
+
+- [@sethkline](https://www.github.com/sethkline)
+
+  
 ## Build Setup
 
 ```bash
@@ -17,4 +26,33 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+  
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_AUTH_URL`
+`STRIPE_KEY`
+
+  
+## Features
+
+- User Login
+- 3 different plans
+- Pay with credit card using Stripe Elements
+- HLS Video Player using HLS.js
+## Used By
+
+This project is used by the following companies:
+
+- Reverence Studios
+
+  
+## Tech Stack
+
+**Client:** Vue, Nuxt, Bulma
+
+  
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
