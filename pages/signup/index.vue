@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title has-text-centered is-size-3 has-text-weight-heavy">
-        Watching Reverence's 2021 recital
+        Watching Reverence's Nativity Ballet
       </h1>
     </div>
     <div class="columns is-desktop is-centered pt-3">
