@@ -8,9 +8,9 @@
               style="margin-top: auto"
               class="is-flex-direction-column column is-half"
             >
-              <h1 class="title is-1">Stars of Heaven!</h1>
+              <h1 class="title is-1">The Nativity</h1>
               <p pt-1 class="is-size-3 has-text-weight-light">
-                Reverence Studios 2021 Recital
+                an original Reverence Studios Ballet
               </p>
               <br />
               <div v-if="isStreamOnly" class="buttons is-left">
@@ -62,7 +62,8 @@
             </div>
             <div class="column is-half">
               <figure class="image is is-covered">
-                <img src="~/assets/images/dancers.png" alt="" />
+                <!-- <img src="~/assets/images/dancers.png" alt="" /> -->
+                <img src="~/assets/images/starslogo.webp" alt="nativity logo" />
               </figure>
             </div>
           </div>

@@ -10,9 +10,7 @@
         <div class="list">
           <ul>
             <div class="list-item">
-              <li class="is-size-3">
-                Choose how you want to watch the recital
-              </li>
+              <li class="is-size-3">Choose how you want to watch the ballet</li>
               <p class="pt-3">
                 Choose from Streaming only, Digital download, or Stream and
                 Download
@@ -21,13 +19,13 @@
 
             <div class="list-item">
               <li>
-                Streaming only allows you to watch the recital for one week only
+                Streaming only allows you to watch the ballet for one week only
               </li>
             </div>
 
             <div class="list-item">
               <li>
-                After one week the streaming ends and the recital will be
+                After one week the streaming ends and the ballet will be
                 available for digital download
               </li>
             </div>
@@ -35,15 +33,15 @@
             <div class="list-item">
               <li>
                 Choosing Stream and Download will allow you to watch and
-                download the recital
+                download the ballet
               </li>
             </div>
-            <div class="list-item">
+            <!-- <div class="list-item">
               <li>
                 All three days of the recitals are included in Stream and
                 download
               </li>
-            </div>
+            </div> -->
           </ul>
         </div>
         <div class="has-text-centered">
