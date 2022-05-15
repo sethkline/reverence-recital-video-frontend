@@ -42,6 +42,10 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/auth',
+    [
+      '@dansmaculotte/nuxt-segment',
+      { writeKey: process.env.SEGMENT_WRITE_KEY },
+    ],
   ],
 
   /*
