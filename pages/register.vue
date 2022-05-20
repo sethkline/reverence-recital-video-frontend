@@ -5,7 +5,6 @@
         <div class="column is-4 is-offset-4">
           <h2 class="title has-text-centered">Create Account</h2>
 
-          <!-- <Notification v-if="success" type="success" :message="success" /> -->
           <Notification v-if="error" type="danger" :message="error" />
 
           <form v-if="!success" method="post" @submit.prevent="register">
@@ -51,10 +50,6 @@
               </button>
             </div>
           </form>
-
-          <!-- <div class="has-text-centered" style="margin-top: 20px">
-            Already got an account? <nuxt-link to="/login">Login</nuxt-link>
-          </div> -->
         </div>
       </div>
     </div>
@@ -105,7 +100,3 @@ export default {
   },
 }
 </script>
-
-try { const response = await this.$auth.loginWith('local', { data: { identifier:
-this.email, password: this.password, }, }) this.$axios.setToken(response.jwt,
-'Bearer', ['post', 'delete'])

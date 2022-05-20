@@ -28,8 +28,7 @@
 
             <div class="list-item">
               <li>
-                After one week the streaming ends and the recital will be
-                available for digital download
+                After one week the streaming ends. Please allow one month for the digital digital download to be available
               </li>
             </div>
 
