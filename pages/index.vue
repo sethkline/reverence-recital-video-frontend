@@ -8,9 +8,9 @@
               style="margin-top: auto"
               class="is-flex-direction-column column is-half"
             >
-              <h1 class="title is-1">The Way Home</h1>
+              <h1 class="title is-1">Anchored</h1>
               <p pt-1 class="is-size-3 has-text-weight-light">
-                Reverence Studios 2022 Spring Recital
+                Reverence Studios 2023 Spring Recital
               </p>
               <br />
               <div v-if="isStreamOnly" class="buttons is-left">
@@ -62,7 +62,7 @@
             </div>
             <div class="column is-half">
               <figure class="image is is-covered">
-                <img src="~/assets/images/dancers.png" alt="" />
+                <img src="~/assets/images/dancers.png" alt="dancers" />
               </figure>
             </div>
           </div>
