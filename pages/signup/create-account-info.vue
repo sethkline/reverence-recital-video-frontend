@@ -13,7 +13,7 @@
         <div class="list">
           <ul>
             <div class="list-item">
-              <li class="is-size-3">Watch All 3 Recitals</li>
+              <li class="is-size-3">Watch the Recital</li>
               <p class="pt-3">
                 Choose from Streaming only, Digital download, or Stream and
                 Download
@@ -28,7 +28,7 @@
 
             <div class="list-item">
               <li>
-                After one week the streaming ends. Please allow one month for the digital digital download to be available
+                After one week the streaming ends. Please allow one month for the digital digital download to be available.
               </li>
             </div>
 
